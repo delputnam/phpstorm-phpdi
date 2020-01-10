@@ -40,7 +40,7 @@ public class PhpDiTypeProvider implements PhpTypeProvider2 {
 
         MethodReference methodRef = ((MethodReference) psiElement);
 
-        if (!("get".equals(methodRef.getName()) || "make".equals(methodRef.getName()))) {
+        if (!("DI::get".equals(methodRef.getName()))) {
             return null;
         }
 
